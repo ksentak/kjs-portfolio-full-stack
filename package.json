@@ -1,0 +1,23 @@
+{
+  "name": "kjs-portfolio-full-stack",
+  "version": "1.0.0",
+  "description": "My personal portfolio website built with React and Node.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksentak/kjs-portfolio-full-stack.git"
+  },
+  "author": "Keaton Sentak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksentak/kjs-portfolio-full-stack/issues"
+  },
+  "homepage": "https://github.com/ksentak/kjs-portfolio-full-stack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
