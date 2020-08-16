@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import emailjs from 'emailjs-com';
+import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/css/ContactForm.css';
@@ -106,21 +106,25 @@ class ContactForm extends Component {
 
 		if (formValid(this.state)) {
 			// Handle form validation success
-			// const { name, email, subject, message } = this.state;
+			const { name, email, subject, message } = this.state;
 
-			// Send form email
-			// let templateParams = {
-			// 	name: name,
-			// 	email: email,
-			// 	subject: subject,
-			// 	message: message
-			// };
-			// emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'userID');
-			this.resetForm();
-			this.toastifySuccess();
-		} else {
-			// Handle form validation failure
-			this.toastifyFail();
+			axios({
+				method: 'POST',
+				url: 'http://localhost:5000/send',
+				data: {
+					name: name,
+					email: email,
+					subject: subject,
+					message: message
+				}.then((response) => {
+					if (response.data.msg === 'success') {
+						this.toastifySuccess();
+						this.resetForm();
+					} else if (response.data.msg === 'fail') {
+						this.toastifyFail();
+					}
+				})
+			});
 		}
 	};
 
@@ -133,7 +137,12 @@ class ContactForm extends Component {
 					<div className='row'>
 						<div className='col-12 text-center'>
 							<div className='contactForm'>
-								<form id='contact-form' onSubmit={this.handleSubmit} noValidate>
+								<form
+									id='contact-form'
+									onSubmit={this.handleSubmit}
+									method='POST'
+									noValidate
+								>
 									{/* Row 1 of form */}
 									<div className='row formRow'>
 										<div className='col-6'>
