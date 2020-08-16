@@ -1,0 +1,23 @@
+.social-inline-item {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.social-inline-item a {
+	height: 50px;
+	width: 50px;
+	background-color: #1f2235;
+	color: white;
+	font-size: 20px;
+	padding: 12px;
+	border: 2px solid #ff4a57;
+	border-radius: 50%;
+}
+
+.social-inline-item a:hover {
+	background-color: #ff4a57;
+}
+
+.social-inline-item:not(:last-child) {
+	margin-right: 15px;
+}

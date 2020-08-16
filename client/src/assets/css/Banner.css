@@ -1,0 +1,28 @@
+.Banner {
+	position: relative;
+	height: 70vh;
+}
+
+.particles {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.jumbotron {
+	background: none;
+	color: white;
+	position: absolute;
+	text-align: center;
+	top: 10%;
+	width: 100%;
+	margin: 0;
+}
+
+.banner-content h1 {
+	font-size: 75px;
+}
+
+.color-theme {
+	color: #ff4a57;
+}

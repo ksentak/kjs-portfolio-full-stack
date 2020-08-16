@@ -1,0 +1,26 @@
+.contact-info {
+	padding: 25px;
+	padding-left: 20px;
+	border-radius: 6px;
+	background: #282c45;
+}
+
+.contact-info span {
+	font-weight: bold;
+	position: relative;
+	font-size: 16px;
+	top: -10px;
+	color: #fff;
+	left: 10px;
+}
+
+.contact-info p {
+	margin-bottom: 0;
+	color: #fff;
+	margin-left: 50px;
+}
+
+.contact-icon {
+	color: #ff4a57;
+	font-size: 32px;
+}

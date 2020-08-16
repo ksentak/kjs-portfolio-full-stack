@@ -1,0 +1,51 @@
+body.admin-bar .fixed-top {
+	top: 28px;
+}
+
+.navbar {
+	padding: 30px 0;
+}
+
+.navbar.fixed-top {
+	background: #1f2235;
+	-webkit-box-shadow: 0px 18px 40px -30px #23263a;
+	box-shadow: 0px 18px 40px -30px #23263a;
+	-webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+	animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.navbar-nav a {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin: 0 10px;
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+}
+
+.navbar-nav a:hover {
+	color: #ff4a57;
+}
+
+.navbar-nav .active {
+	color: #ff4a57;
+}
+
+.navbar-toggler {
+	background: transparent !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	font-size: 24px;
+	text-align: right;
+	margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+	.navbar-nav li {
+		padding-bottom: 7px;
+	}
+}
