@@ -108,7 +108,7 @@ class ContactForm extends Component {
 			// Handle form validation success
 			const { name, email, subject, message } = this.state;
 			axios
-				.post('http://localhost:5000/send', {
+				.post('/send', {
 					data: {
 						name: name,
 						email: email,
