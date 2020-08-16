@@ -41,6 +41,16 @@ class ContactForm extends Component {
 		};
 	}
 
+	// Reset form
+	resetForm() {
+		this.setState({
+			name: '',
+			email: '',
+			subject: '',
+			message: ''
+		});
+	}
+
 	toastifySuccess() {
 		toast('Form sent!', {
 			position: 'bottom-right',
@@ -62,16 +72,6 @@ class ContactForm extends Component {
 			pauseOnHover: true,
 			draggable: false,
 			className: 'submit-feedback fail'
-		});
-	}
-
-	// Reset form
-	resetForm() {
-		this.setState({
-			name: '',
-			email: '',
-			subject: '',
-			message: ''
 		});
 	}
 
@@ -101,13 +101,12 @@ class ContactForm extends Component {
 		this.setState({ formErrors, [name]: value });
 	};
 
-	handleSubmit = (e) => {
+	handleSubmit(e) {
 		e.preventDefault();
 
 		if (formValid(this.state)) {
 			// Handle form validation success
 			const { name, email, subject, message } = this.state;
-
 			axios
 				.post('http://localhost:5000/send', {
 					data: {
@@ -117,22 +116,24 @@ class ContactForm extends Component {
 						message: message
 					}
 				})
-				.then(function (res) {
-					console.log(res.data);
+				.then((res) => {
 					if (res.data.msg === 'success') {
-						alert('Message Sent.');
-						// this.resetForm();
-						// this.toastifySuccess();
+						// Send form
+						this.resetForm();
+						this.toastifySuccess();
 					} else if (res.data.msg === 'fail') {
-						alert('Message failed to send.');
-						// this.toastifyFail();
+						//
+						this.toastifyFail();
 					}
-					// })
-					// .catch(function (res) {
-					// 	console.log(res);
+				})
+				.catch(function (res) {
+					console.log(res);
 				});
+		} else {
+			// Handle form validation failure
+			this.toastifyFail();
 		}
-	};
+	}
 
 	render() {
 		const { formErrors } = this.state;

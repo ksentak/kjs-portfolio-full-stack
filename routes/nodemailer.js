@@ -26,11 +26,11 @@ router.post('/send', (req, res, next) => {
 	let email = req.body.data.email;
 	let formSubject = req.body.data.subject;
 	let message = req.body.data.message;
-	let content = `Name: ${name} \n Subject: ${formSubject} \n Email: ${email} \n Message: ${message} `;
+	let content = `Name: ${name} \n\nSubject: ${formSubject} \n\nEmail: ${email} \n\nMessage: ${message} `;
 
 	let mail = {
 		from: 'keaton@keatonsentak.com',
-		to: 'k.sentak@outlook.com', //Change to email address that you want to receive messages on
+		to: 'keatonsentak@gmail.com',
 		subject: 'New message from keatonsentak.com contact form',
 		text: content
 	};
