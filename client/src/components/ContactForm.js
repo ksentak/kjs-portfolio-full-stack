@@ -120,8 +120,10 @@ class ContactForm extends Component {
 					if (response.data.msg === 'success') {
 						this.toastifySuccess();
 						this.resetForm();
+						alert('msg sent');
 					} else if (response.data.msg === 'fail') {
 						this.toastifyFail();
+						alert('msg fail');
 					}
 				})
 			});
