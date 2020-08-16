@@ -108,25 +108,29 @@ class ContactForm extends Component {
 			// Handle form validation success
 			const { name, email, subject, message } = this.state;
 
-			axios({
-				method: 'POST',
-				url: 'http://localhost:5000/send',
-				data: {
-					name: name,
-					email: email,
-					subject: subject,
-					message: message
-				}.then((response) => {
-					if (response.data.msg === 'success') {
-						this.toastifySuccess();
-						this.resetForm();
-						alert('msg sent');
-					} else if (response.data.msg === 'fail') {
-						this.toastifyFail();
-						alert('msg fail');
+			axios
+				.post('http://localhost:5000/send', {
+					data: {
+						name: name,
+						email: email,
+						subject: subject,
+						message: message
 					}
 				})
-			});
+				.then(function (res) {
+					console.log(res.data);
+					if (res.data.msg === 'success') {
+						alert('Message Sent.');
+						// this.resetForm();
+						// this.toastifySuccess();
+					} else if (res.data.msg === 'fail') {
+						alert('Message failed to send.');
+						// this.toastifyFail();
+					}
+					// })
+					// .catch(function (res) {
+					// 	console.log(res);
+				});
 		}
 	};
 
@@ -141,7 +145,7 @@ class ContactForm extends Component {
 							<div className='contactForm'>
 								<form
 									id='contact-form'
-									onSubmit={this.handleSubmit}
+									onSubmit={this.handleSubmit.bind(this)}
 									method='POST'
 									noValidate
 								>

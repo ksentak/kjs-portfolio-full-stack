@@ -22,14 +22,14 @@ transporter.verify((err, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-	let name = req.body.name;
-	let email = req.body.email;
-	let formSubject = req.body.subject;
-	let message = req.body.message;
-	let content = `Name: ${name} \n Subject: ${formSubject} \n Email: ${email} \n Message: ${content} `;
+	let name = req.body.data.name;
+	let email = req.body.data.email;
+	let formSubject = req.body.data.subject;
+	let message = req.body.data.message;
+	let content = `Name: ${name} \n Subject: ${formSubject} \n Email: ${email} \n Message: ${message} `;
 
 	let mail = {
-		from: name,
+		from: 'keaton@keatonsentak.com',
 		to: 'k.sentak@outlook.com', //Change to email address that you want to receive messages on
 		subject: 'New message from keatonsentak.com contact form',
 		text: content
