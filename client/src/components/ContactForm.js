@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/css/ContactForm.css';
@@ -106,16 +106,16 @@ class ContactForm extends Component {
 
 		if (formValid(this.state)) {
 			// Handle form validation success
-			const { name, email, subject, message } = this.state;
+			// const { name, email, subject, message } = this.state;
 
 			// Send form email
-			let templateParams = {
-				name: name,
-				email: email,
-				subject: subject,
-				message: message
-			};
-			emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'userID');
+			// let templateParams = {
+			// 	name: name,
+			// 	email: email,
+			// 	subject: subject,
+			// 	message: message
+			// };
+			// emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'userID');
 			this.resetForm();
 			this.toastifySuccess();
 		} else {
