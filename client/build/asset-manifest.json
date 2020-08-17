@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b19d2e0b.chunk.css",
+    "main.js": "/static/js/main.da5d2050.chunk.js",
+    "main.js.map": "/static/js/main.da5d2050.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6c0a6773.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6c0a6773.js.map",
+    "static/css/2.3a221eca.chunk.css": "/static/css/2.3a221eca.chunk.css",
+    "static/js/2.8a383803.chunk.js": "/static/js/2.8a383803.chunk.js",
+    "static/js/2.8a383803.chunk.js.map": "/static/js/2.8a383803.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.60273b0dcc98e6c753dc625603b632ea.js": "/precache-manifest.60273b0dcc98e6c753dc625603b632ea.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.3a221eca.chunk.css.map": "/static/css/2.3a221eca.chunk.css.map",
+    "static/css/main.b19d2e0b.chunk.css.map": "/static/css/main.b19d2e0b.chunk.css.map",
+    "static/js/2.8a383803.chunk.js.LICENSE.txt": "/static/js/2.8a383803.chunk.js.LICENSE.txt",
+    "static/media/GoogleBooks.png": "/static/media/GoogleBooks.bfdb0cd8.png",
+    "static/media/Keaton_Sentak_Resume.pdf": "/static/media/Keaton_Sentak_Resume.faf98f2a.pdf",
+    "static/media/liberty-beans.png": "/static/media/liberty-beans.2084e4b7.png",
+    "static/media/omega.png": "/static/media/omega.35cfd0d2.png",
+    "static/media/profile-headshot.jpg": "/static/media/profile-headshot.a04b403d.jpg",
+    "static/media/react-auth.png": "/static/media/react-auth.7d7e15d1.png",
+    "static/media/react-colors.png": "/static/media/react-colors.ff865807.png",
+    "static/media/time_machine.png": "/static/media/time_machine.2335c3e5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c0a6773.js",
+    "static/css/2.3a221eca.chunk.css",
+    "static/js/2.8a383803.chunk.js",
+    "static/css/main.b19d2e0b.chunk.css",
+    "static/js/main.da5d2050.chunk.js"
+  ]
+}
