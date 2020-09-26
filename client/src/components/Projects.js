@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { Modal } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import '../assets/css/Projects.css';
 import ReactColors from '../assets/images/react-colors.png';
 import ReactAuth from '../assets/images/react-auth.png';
 import LibertyBeans from '../assets/images/liberty-beans.png';
@@ -12,157 +12,62 @@ import GoogleBooks from '../assets/images/GoogleBooks.png';
 import Omega from '../assets/images/omega.png';
 import TimeMachine from '../assets/images/time_machine.png';
 
-class Projects extends Component {
-	render() {
-		return (
-			<div className='Projects'>
-				<div className='container'>
-					{/* Row 1 */}
-					<div className='row'>
-						<div className='col-12'>
-							<h1 className='section-title'>
-								<span className='main-color'>Portfolio</span> Projects
-							</h1>
-						</div>
-					</div>
-					{/* Row 2 */}
-					<div className='row text-center'>
-						{/* Project 1 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal1'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img
-									className='img-fluid portfolio-img'
-									src={ReactColors}
-									alt='React-Colors'
-								/>
-								<p className='project-title'>React Colors</p>
-							</div>
-						</div>
+const Projects = (props) => {
+	const { className = 'portfolio-modal' } = props;
+	const [modal1, setModal1] = useState(false);
+	const [modal2, setModal2] = useState(false);
+	const [modal3, setModal3] = useState(false);
+	const [modal4, setModal4] = useState(false);
+	const [modal5, setModal5] = useState(false);
+	const [modal6, setModal6] = useState(false);
+	const toggle1 = () => setModal1(!modal1);
+	const toggle2 = () => setModal2(!modal2);
+	const toggle3 = () => setModal3(!modal3);
+	const toggle4 = () => setModal4(!modal4);
+	const toggle5 = () => setModal5(!modal5);
+	const toggle6 = () => setModal6(!modal6);
 
-						{/* Project 2 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal2'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img
-									className='img-fluid portfolio-img'
-									src={ReactAuth}
-									alt='React-Auth'
-								/>
-								<p className='project-title'>React User Authentication</p>
-							</div>
-						</div>
-
-						{/* Project 3 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal3'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img
-									className='img-fluid portfolio-img'
-									src={LibertyBeans}
-									alt='Liberty Beans Coffee'
-								/>
-								<p className='project-title'>Liberty Beans Coffee</p>
-							</div>
-						</div>
-						{/* Project 4 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal4'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img
-									className='img-fluid portfolio-img'
-									src={GoogleBooks}
-									alt='Google Books App'
-								/>
-								<p className='project-title'>Google Books</p>
-							</div>
-						</div>
-						{/* Project 5 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal5'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img className='img-fluid portfolio-img' src={Omega} alt='Omega' />
-								<p className='project-title'>Omega</p>
-							</div>
-						</div>
-						{/* Project 6 */}
-						<div className='col-lg-4 col-md-6'>
-							<div
-								className='portfolio-item mx-auto'
-								data-toggle='modal'
-								data-target='#portfolioModal6'
-							>
-								<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
-									<div className='portfolio-item-caption-content text-center text-white'>
-										<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
-									</div>
-								</div>
-								<img
-									className='img-fluid portfolio-img'
-									src={TimeMachine}
-									alt='Time Machine'
-								/>
-								<p className='project-title'>Time Machine</p>
-							</div>
-						</div>
+	return (
+		<div className='Projects'>
+			<div className='container'>
+				{/* Row 1 */}
+				<div className='row'>
+					<div className='col-12'>
+						<h1 className='section-title'>
+							<span className='main-color'>Portfolio</span> Projects
+						</h1>
 					</div>
 				</div>
-
-				{/* Portfolio Modals */}
-				{/* Portfolio Modal 1 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal1'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+				{/* Row 2 */}
+				<div className='row text-center'>
+					{/* Project 1 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle1}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img
+								className='img-fluid portfolio-img'
+								src={ReactColors}
+								alt='React-Colors'
+							/>
+							<p className='project-title'>React Colors</p>
+						</div>
+					</div>
+					<Modal
+						size='lg'
+						isOpen={modal1}
+						toggle={toggle1}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle1}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -228,22 +133,32 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
+					</Modal>
+
+					{/* Project 2 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle2}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img className='img-fluid portfolio-img' src={ReactAuth} alt='React-Auth' />
+							<p className='project-title'>React User Authentication</p>
+						</div>
 					</div>
-				</div>
-				{/* Portfolio Modal 2 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal2'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+					<Modal
+						size='lg'
+						isOpen={modal2}
+						toggle={toggle2}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle2}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -309,23 +224,36 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</Modal>
 
-				{/* Portfolio Modal 3 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal3'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+					{/* Project 3 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle3}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img
+								className='img-fluid portfolio-img'
+								src={LibertyBeans}
+								alt='Liberty Beans Coffee'
+							/>
+							<p className='project-title'>Liberty Beans Coffee</p>
+						</div>
+					</div>
+					<Modal
+						size='lg'
+						isOpen={modal3}
+						toggle={toggle3}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle3}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -392,23 +320,36 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</Modal>
 
-				{/* Portfolio Modal 4 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal4'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+					{/* Project 4 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle4}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img
+								className='img-fluid portfolio-img'
+								src={GoogleBooks}
+								alt='Google Books App'
+							/>
+							<p className='project-title'>Google Books</p>
+						</div>
+					</div>
+					<Modal
+						size='lg'
+						isOpen={modal4}
+						toggle={toggle4}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle4}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -474,23 +415,32 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</Modal>
 
-				{/* Portfolio Modal 5 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal5'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+					{/* Project 5 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle5}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img className='img-fluid portfolio-img' src={Omega} alt='Omega' />
+							<p className='project-title'>Omega</p>
+						</div>
+					</div>
+					<Modal
+						size='lg'
+						isOpen={modal5}
+						toggle={toggle5}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle5}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -548,23 +498,36 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
+					</Modal>
+					{/* Project 6 */}
+					<div className='col-lg-4 col-md-6'>
+						<div className='portfolio-item mx-auto' onClick={toggle6}>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center text-white'>
+									<FontAwesomeIcon icon={faPlus} size='3x'></FontAwesomeIcon>
+								</div>
+							</div>
+							<img
+								className='img-fluid portfolio-img'
+								src={TimeMachine}
+								alt='Time Machine'
+							/>
+							<p className='project-title'>Time Machine</p>
+						</div>
 					</div>
-				</div>
 
-				{/* Portfolio Modal 6 */}
-				<div
-					className='portfolio-modal modal fade'
-					id='portfolioModal6'
-					tabIndex='-1'
-					role='dialog'
-					aria-hidden='true'
-				>
-					<div className='modal-dialog modal-lg' role='document'>
+					<Modal
+						size='lg'
+						isOpen={modal6}
+						toggle={toggle6}
+						className={className}
+						role='dialog'
+					>
 						<div className='modal-content'>
 							<button
+								onClick={toggle6}
 								type='button'
 								className='close'
-								data-dismiss='modal'
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>
@@ -632,12 +595,11 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Modal>
 				</div>
-				{/* End of Modals */}
 			</div>
-		);
-	}
-}
+		</div>
+	);
+};
 
 export default Projects;

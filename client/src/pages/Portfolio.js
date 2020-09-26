@@ -1,12 +1,10 @@
 import React from 'react';
-// import Projects from '../components/Projects';
-// import ProjectPortfolio from '../components/ProjectPortfolio';
-import PortfolioReactstrap from '../components/PortfolioReactstrap';
+import Projects from '../components/Projects';
 
 const Portfolio = () => {
 	return (
 		<div className='Portfolio'>
-			<PortfolioReactstrap />
+			<Projects />
 		</div>
 	);
 };

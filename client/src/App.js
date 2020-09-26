@@ -10,7 +10,6 @@ import Error from './pages/Error';
 import Navbar from './components/Navbar';
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './assets/css/main.css';
 import './assets/css/style.css';
 
 const App = () => {
