@@ -9,7 +9,9 @@ import Error from './pages/Error';
 // Components
 import Navbar from './components/Navbar';
 // CSS
-import './assets/css/main.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import './assets/css/main.css';
+import './assets/css/style.css';
 
 const App = () => {
 	return (
