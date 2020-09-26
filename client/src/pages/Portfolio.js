@@ -1,10 +1,11 @@
 import React from 'react';
-import Projects from '../components/Projects';
+// import Projects from '../components/Projects';
+import ProjectPortfolio from '../components/ProjectPortfolio';
 
 const Portfolio = () => {
 	return (
 		<div className='Portfolio'>
-			<Projects />
+			<ProjectPortfolio />
 		</div>
 	);
 };
