@@ -55,6 +55,17 @@ class ProjectPortfolio extends Component {
 		this.setState({ showModal6: !this.state.showModal6 });
 	}
 
+	// exitAnyModal() {
+	// 	this.setState({
+	// 		showModal1: false,
+	// 		showModal2: false,
+	// 		showModal3: false,
+	// 		showModal4: false,
+	// 		showModal5: false,
+	// 		showModal6: false
+	// 	});
+	// }
+
 	render() {
 		const show1 = this.state.showModal1 ? 'show' : '';
 		const show2 = this.state.showModal2 ? 'show' : '';
@@ -219,6 +230,7 @@ class ProjectPortfolio extends Component {
 					role='dialog'
 					// aria-hidden='true'
 					style={{ display: `${modalStyle1}` }}
+					onClick={this.toggleModal1}
 				>
 					<div className='modal-dialog modal-lg' role='document'>
 						<div className='modal-content'>
