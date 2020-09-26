@@ -360,6 +360,10 @@ body.admin-bar .fixed-top {
 	opacity: 1;
 }
 
+.modal-content {
+	background-color: #282c45;
+}
+
 .portfolio-modal-title {
 	color: #fff;
 }
