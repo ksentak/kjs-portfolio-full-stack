@@ -29,7 +29,7 @@ router.post('/send', (req, res, next) => {
 	let content = `Name: ${name} \n\nSubject: ${formSubject} \n\nEmail: ${email} \n\nMessage: ${message} `;
 
 	let mail = {
-		from: 'keaton@keatonsentak.com',
+		from: 'k.sentak@yahoo.com',
 		to: 'keatonsentak@gmail.com',
 		subject: 'New message from keatonsentak.dev contact form',
 		text: content
