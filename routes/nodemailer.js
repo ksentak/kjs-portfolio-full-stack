@@ -31,7 +31,7 @@ router.post('/send', (req, res, next) => {
 	let mail = {
 		from: 'keaton@keatonsentak.com',
 		to: 'keatonsentak@gmail.com',
-		subject: 'New message from keatonsentak.com contact form',
+		subject: 'New message from keatonsentak.dev contact form',
 		text: content
 	};
 
