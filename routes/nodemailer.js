@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const creds = require('../config/config');
 
 var transport = {
-	host: 'smtp.flockmail.com',
+	host: 'smtp.mail.yahoo.com',
 	auth: {
 		user: creds.USER,
 		pass: creds.PASS
