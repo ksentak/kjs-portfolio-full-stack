@@ -1,6 +1,6 @@
 {
 	"name": "kjs-portfolio-full-stack-client",
-	"version": "0.1.0",
+	"version": "1.4.0",
 	"private": true,
 	"proxy": "http://localhost:5000",
 	"dependencies": {
@@ -15,6 +15,7 @@
 		"bootstrap": "^4.5.2",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
+		"react-hook-form": "^6.9.2",
 		"react-particles-js": "^3.3.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.3",
