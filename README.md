@@ -1,4 +1,17 @@
-# kjs-portfolio-full-stack
+# KJS Portfolio Full Stack
 
-Front-end is built with React.
-Back-end runs on Node.
+- My personal portfolio website
+- React & Typescript on the front end
+- Node on the backend
+
+---
+
+##### Deployed Application:
+
+https://keatonsentak.dev/
+
+---
+
+##### Author
+
+Keaton Sentak - [Portfolio](https://keatonsentak.com) | [GitHub](https://github.com/ksentak)
