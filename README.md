@@ -14,4 +14,4 @@ https://keatonsentak.dev/
 
 ##### Author
 
-Keaton Sentak - [Portfolio](https://keatonsentak.com) | [GitHub](https://github.com/ksentak)
+Keaton Sentak - [Portfolio](https://keatonsentak.dev) | [GitHub](https://github.com/ksentak)
