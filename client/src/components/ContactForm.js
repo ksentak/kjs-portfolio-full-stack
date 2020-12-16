@@ -76,18 +76,22 @@ const ContactForm = () => {
 											type='text'
 											name='name'
 											ref={register({
-												required: { value: true, message: 'Please enter your name' },
-												pattern: {
-													value: /^[A-Za-z]+$/i,
-													message: 'Please use alphabetical characters only'
+												required: {
+													value: true,
+													message: 'Please enter your name'
+												},
+												maxLength: {
+													value: 30,
+													message: 'Please use 30 characters or less'
 												}
 											})}
 											className='form-control formInput'
 											placeholder='Name'
-											noValidate
 										></input>
 										{errors.name && (
-											<span className='errorMessage'>{errors.name.message}</span>
+											<span className='errorMessage'>
+												{errors.name.message}
+											</span>
 										)}
 									</div>
 									<div className='col-6'>
@@ -115,7 +119,10 @@ const ContactForm = () => {
 											type='text'
 											name='subject'
 											ref={register({
-												required: { value: true, message: 'Please enter a subject' },
+												required: {
+													value: true,
+													message: 'Please enter a subject'
+												},
 												maxLength: {
 													value: 75,
 													message: 'Subject cannot exceed 75 characters'
@@ -125,7 +132,9 @@ const ContactForm = () => {
 											placeholder='Subject'
 										></input>
 										{errors.subject && (
-											<span className='errorMessage'>{errors.subject.message}</span>
+											<span className='errorMessage'>
+												{errors.subject.message}
+											</span>
 										)}
 									</div>
 								</div>
@@ -142,7 +151,9 @@ const ContactForm = () => {
 											placeholder='Message'
 										></textarea>
 										{errors.message && (
-											<span className='errorMessage'>Please enter a message</span>
+											<span className='errorMessage'>
+												Please enter a message
+											</span>
 										)}
 									</div>
 								</div>

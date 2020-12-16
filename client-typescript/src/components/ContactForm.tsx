@@ -54,7 +54,7 @@ const ContactForm:React.FC = () => {
 					reset();
 					toastifySuccess();
 				} else if (res.data.msg === 'fail') {
-					// Message send fails
+					//  Notify user of send failure
 					toastifyFail();
 				}
 			})
@@ -83,14 +83,13 @@ const ContactForm:React.FC = () => {
 											name='name'
 											ref={register({
 												required: { value: true, message: 'Please enter your name' },
-												pattern: {
-													value: /^[A-Za-z]+$/i,
-													message: 'Please use alphabetical characters only'
+												maxLength: {
+													value: 30,
+													message: 'Please use 30 characters or less'
 												}
 											})}
 											className='form-control formInput'
 											placeholder='Name'
-											// noValidate={true}
 										></input>
 										{errors.name && (
 											<span className='errorMessage'>{errors.name.message}</span>

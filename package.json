@@ -1,8 +1,8 @@
 {
 	"name": "kjs-portfolio-full-stack",
-	"version": "1.6.0",
+	"version": "1.7.0",
 	"engines": {
-		"node": "12.13.0"
+		"node": "15.2.1"
 	},
 	"description": "My personal portfolio website built with React and Node.",
 	"main": "server.js",
