@@ -82,13 +82,12 @@ li > ol {
 	border-radius: 100px;
 	margin-bottom: 25px;
 }
-
 /* End of Main */
 
 /* Banner */
 .Banner {
 	position: relative;
-	height: 70vh;
+	height: 80vh;
 }
 
 .particles {
@@ -114,7 +113,6 @@ li > ol {
 .color-theme {
 	color: #ff4a57;
 }
-
 /* End of Banner */
 
 /* Contact */
@@ -225,7 +223,6 @@ form {
 	color: #ff4a57;
 	font-size: 32px;
 }
-
 /* End of Contact */
 
 /* Info */
@@ -250,7 +247,6 @@ form {
 .resume-btn:hover {
 	background-color: #ff4a57;
 }
-
 /* End of Info */
 
 /* Navbar */
@@ -305,7 +301,6 @@ body.admin-bar .fixed-top {
 		padding-bottom: 7px;
 	}
 }
-
 /* End of Navbar */
 
 /* Projects */
@@ -399,7 +394,6 @@ body.admin-bar .fixed-top {
 	margin-right: 5px;
 	color: #ff4a57;
 }
-
 /* End of Projects */
 
 /* Socials */
@@ -426,5 +420,4 @@ body.admin-bar .fixed-top {
 .social-inline-item:not(:last-child) {
 	margin-right: 15px;
 }
-
 /* End of Socials */

@@ -15,25 +15,16 @@ interface Props {
 	projectDescription: string;
 }
 
-const ProjectItem:React.FC<Props> = ({
-		title, 
-		imgSrc, 
-		imgAlt, 
-		viewCode, 
-		viewSite, 
-		projectDescription
-	}: Props) => {
-	// const {
-	// 	title,
-	// 	imgSrc,
-	// 	imgAlt,
-	// 	viewCode,
-	// 	viewSite,
-	// 	projectDescription
-	// } = props;
-
+const ProjectItem: React.FC<Props> = ({
+	title,
+	imgSrc,
+	imgAlt,
+	viewCode,
+	viewSite,
+	projectDescription
+}: Props) => {
 	const [modal, setModal] = useState<boolean>(false);
-	const toggle = () :void => setModal(!modal);
+	const toggle = (): void => setModal(!modal);
 
 	return (
 		<>

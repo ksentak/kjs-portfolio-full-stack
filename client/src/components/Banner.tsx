@@ -1,8 +1,9 @@
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 import Socials from './Socials';
 
-const Banner:React.FC = () => {
-	const paramConfig = {
+const Banner: React.FC = () => {
+	const config = {
+		fpsLimit: 60,
 		particles: {
 			number: {
 				value: 160,
@@ -12,6 +13,16 @@ const Banner:React.FC = () => {
 			},
 			color: {
 				value: '#ffffff'
+			},
+			shape: {
+				type: 'circle',
+				stroke: {
+					width: 0,
+					color: '#000000'
+				},
+				polygon: {
+					nb_sides: 5
+				}
 			},
 			opacity: {
 				value: 0.1
@@ -25,9 +36,10 @@ const Banner:React.FC = () => {
 				}
 			},
 			line_linked: {
-				enable: false
+				enabled: false
 			},
 			move: {
+				enable: true,
 				random: true,
 				speed: 1,
 				direction: 'top',
@@ -35,9 +47,10 @@ const Banner:React.FC = () => {
 			}
 		}
 	};
+
 	return (
 		<div className='Banner'>
-			<Particles className='particles' params={paramConfig} />
+			<Particles className='particles' options={config} />
 			<div className='jumbotron jumbotron-fluid'>
 				<div className='banner-content'>
 					<h1>
