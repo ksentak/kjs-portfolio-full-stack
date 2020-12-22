@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Error:React.FC = () => {
+const Error: React.FC = () => {
 	return (
 		<div className='Error'>
 			<div className='jumbotron jumbotron-fluid error-jumbotron'>

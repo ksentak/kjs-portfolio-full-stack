@@ -1,6 +1,6 @@
 import Projects from '../components/Projects';
 
-const Portfolio:React.FC = () => {
+const Portfolio: React.FC = () => {
 	return (
 		<div className='Portfolio'>
 			<Projects />

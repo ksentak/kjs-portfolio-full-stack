@@ -1,6 +1,6 @@
 import Banner from '../components/Banner';
 
-const Home:React.FC = () => {
+const Home: React.FC = () => {
 	return (
 		<div className='Home'>
 			<Banner />

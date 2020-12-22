@@ -11,7 +11,7 @@ import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 
-const App:React.FC = () => {
+const App: React.FC = () => {
 	return (
 		<Router>
 			<Navbar />
