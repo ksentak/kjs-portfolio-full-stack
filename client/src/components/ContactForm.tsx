@@ -151,7 +151,7 @@ const ContactForm: React.FC = () => {
 										)}
 									</div>
 								</div>
-								<button className='submit-btn' type='submit'>
+								<button className='red-btn' type='submit'>
 									Submit
 								</button>
 							</form>

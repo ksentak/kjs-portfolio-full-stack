@@ -54,7 +54,7 @@ const Banner: React.FC = () => {
 			<div className='jumbotron jumbotron-fluid'>
 				<div className='banner-content'>
 					<h1>
-						<span className='color-theme'>Keaton</span> Sentak
+						<span className='main-color'>Keaton</span> Sentak
 					</h1>
 					<h6>Full-Stack Developer</h6>
 					<Socials />
