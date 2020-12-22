@@ -10,7 +10,7 @@ interface data {
 	message: string;
 }
 
-const ContactForm:React.FC = () => {
+const ContactForm: React.FC = () => {
 	const { register, errors, handleSubmit, reset } = useForm();
 
 	const toastifySuccess = () :void => {

@@ -6,7 +6,7 @@ import GoogleBooks from '../assets/images/GoogleBooks.png';
 import Omega from '../assets/images/omega.png';
 import TimeMachine from '../assets/images/time_machine.png';
 
-const Projects:React.FC = () => {
+const Projects: React.FC = () => {
 	return (
 		<div className='Projects'>
 			<div className='container'>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navbar:React.FC = () => {
+const Navbar: React.FC = () => {
 	const [menu, setAsOpen] = useState<boolean>(false);
 
 	const toggleNav = () :void => {

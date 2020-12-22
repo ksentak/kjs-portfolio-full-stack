@@ -3,7 +3,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-const ContactInfo:React.FC = () => {
+const ContactInfo: React.FC = () => {
 	return (
 		<div className='ContactForm'>
 			<div className='container'>
