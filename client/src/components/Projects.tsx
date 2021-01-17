@@ -4,7 +4,7 @@ import ReactAuth from '../assets/images/react-auth.png';
 import LibertyBeans from '../assets/images/liberty-beans.png';
 import GoogleBooks from '../assets/images/GoogleBooks.png';
 import Omega from '../assets/images/omega.png';
-import TimeMachine from '../assets/images/time_machine.png';
+import VueNotes from '../assets/images/vueNotes.png';
 
 const Projects: React.FC = () => {
 	return (
@@ -71,12 +71,12 @@ const Projects: React.FC = () => {
 
 					{/* Project 6 */}
 					<ProjectItem
-						imgSrc={TimeMachine}
-						imgAlt={'Time-Machine Project'}
-						projectDescription={`The Time Machine app provides users with an easy, fun way to learn about history. The user enters a year into the search box, and a historical snapshot from that time will be generated. The data returned by the app includes top movies, TV shows and news headlines from the search year, as well as a Gif related to the time period.`}
-						title={'Time Machine'}
-						viewCode={'https://github.com/ksentak/time-machine'}
-						viewSite={'https://ksentak.github.io/time-machine/'}
+						imgSrc={VueNotes}
+						imgAlt={'Vue Notes Project'}
+            projectDescription={`Vue Notes is based off of Google's note-taking app, Keep. Using Vue, Vuex, Vuetify, & Firebase, a user can jot down notes to serve as reminders for later. The application has total CRUD functionality and notes can be colored coded for optimal organization.`}
+            title={'Vue Notes'}
+            viewCode={'https://github.com/ksentak/vue-notes'}
+            viewSite={'https://vue-notes01.netlify.app/'}
 					/>
 				</div>
 			</div>

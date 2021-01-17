@@ -1,4 +1,4 @@
-import PDF from '../assets/files/Keaton_Sentak_Resume.pdf';
+import PDF from '../assets/files/KeatonSentakResume.pdf';
 import Headshot from '../assets/images/profile-headshot.jpg';
 
 const Info: React.FC = () => {
@@ -20,14 +20,7 @@ const Info: React.FC = () => {
 					</div>
 					<div className='col-md-6 about-section'>
 						<p className='about-text'>
-							A Full-Stack Developer and graduate of both Rutgers University and the
-							University of Pennsylvania LPS Coding Bootcamp looking to contribute
-							long-term organizational value through my knowledge of both front and
-							back-end technologies. Well-versed in various web technologies such as
-							JavaScript, Node.js, React.js, MongoDB and MySQL used to generate fully
-							functional websites, web applications, and databases. Equipped to work
-							collaboratively in a team setting to ensure optimal results for user and
-							technology centered designs.
+            A full-stack developer with experience building modern web applications and custom software solutions for clients. Educated at both Rutgers University and the University of Pennsylvania LPS Coding Bootcamp. Looking to contribute long-term organizational value through my knowledge of various programming technologies. Passionate about working in a collaborative environment to create meaningful web applications and solve programming challenges that benefit the end user.
 						</p>
 						<a href={PDF} target='_blank' rel='noopener noreferrer'>
 							<button className='resume-btn mt-2 mb-3'>Download Resume</button>
