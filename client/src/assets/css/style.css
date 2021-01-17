@@ -228,6 +228,15 @@ ol {
 }
 
 /* Modals */
+.modal-dialog {
+  border: var(--primary);
+}
+
+.modal-content {
+  border-radius: 6px;
+  border: 3.5px solid var(--primary);
+}
+
 .modal-body {
   background-color: var(--secondary-light);
 }
@@ -248,7 +257,7 @@ ol {
 }
 
 .portfolio-modal-title {
-  color: #212121;
+  color: var(--primary);
 }
 
 .modal-img {
