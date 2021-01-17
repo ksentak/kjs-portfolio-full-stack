@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
 				}
 			},
 			color: {
-				value: '#ffffff'
+				value: '#90caf9'
 			},
 			shape: {
 				type: 'circle',
@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
 				}
 			},
 			opacity: {
-				value: 0.1
+				value: 0.4
 			},
 			size: {
 				value: 5,
