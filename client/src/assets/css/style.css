@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --primary: #1e88e5;
-  --secondary: #fff;
-  --secondary-light: #f0f0f0;
+  --primary: #2da8d8;
+  --dark: #24292e;
+  --dark-lighten: #384048;
+  --redAlt: #d9514e;
 }
 
 body {
   font-family: Poppins;
-  background: var(--secondary);
-  color: #212121;
+  background: var(--dark);
+  color: #fff;
   line-height: 26px;
 }
 
@@ -21,7 +22,7 @@ h4,
 h5,
 h6 {
   word-wrap: break-word;
-  color: #212121;
+  color: #fff;
 }
 
 h1:not(:last-child),
@@ -62,12 +63,17 @@ ol {
 }
 
 .primary-btn {
-  background-color: var(--primary);
+  background-color: var(--dark);
   color: #fff !important;
   padding: 15px 50px;
   border: 2px solid var(--primary);
   border-radius: 100px;
   margin-bottom: 25px;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary);
+  color: #fff !important;
 }
 /* End of Main */
 
@@ -81,7 +87,7 @@ ol {
   padding-right: 0.5em;
   margin: 0 10px;
   font-weight: 500;
-  color: #212121;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -148,8 +154,8 @@ ol {
 .social-inline-item a {
   height: 50px;
   width: 50px;
-  background-color: var(--secondary);
-  color: #212121;
+  background-color: var(--dark);
+  color: #fff;
   font-size: 20px;
   padding: 12px;
   border: 2px solid var(--primary);
@@ -178,8 +184,8 @@ ol {
 }
 
 .resume-btn {
-  background-color: var(--secondary);
-  color: #212121 !important;
+  background-color: var(--dark);
+  color: #fff !important;
   padding: 18px 40px;
   border: 2px solid var(--primary);
   border-radius: 100px;
@@ -203,7 +209,7 @@ ol {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(30, 136, 229, 0.6);
+  background-color: rgba(45, 168, 216, 0.7);
   border-radius: 6px;
 }
 
@@ -238,7 +244,7 @@ ol {
 }
 
 .modal-body {
-  background-color: var(--secondary-light);
+  background-color: var(--dark);
 }
 
 .portfolio-modal .close {
@@ -253,7 +259,7 @@ ol {
 }
 
 .modal-content {
-  background-color: var(--secondary-light);
+  background-color: var(--dark);
 }
 
 .portfolio-modal-title {
@@ -271,8 +277,8 @@ ol {
 }
 
 .modal-btn {
-  background-color: var(--secondary-light);
-  color: #212121 !important;
+  background-color: var(--dark);
+  color: #fff !important;
   padding: 10px 20px;
   border: 2px solid var(--primary);
   border-radius: 100px;
@@ -297,7 +303,7 @@ ol {
 /* Contact */
 form {
   margin-top: 20px;
-  background: var(--secondary);
+  background: var(--dark);
 }
 
 .formRow {
@@ -306,25 +312,27 @@ form {
 
 .formInput {
   padding: 25px 10px;
-  background-color: var(--secondary-light);
+  background-color: var(--dark-lighten);
+  /* outline: none;
+  box-shadow: 0 0 0 2px var(--primary); */
   border: none;
-  color: #212121 !important;
+  color: #fff !important;
 }
 
 .formInput:focus {
-  background-color: var(--secondary-light);
+  background-color: var(--dark-lighten);
   outline: none;
   box-shadow: 0 0 0 2px var(--primary);
   color: white;
 }
 
 .formInput::placeholder {
-  color: #212121;
-  opacity: 1;
+  color: #fff;
+  opacity: 0.7;
 }
 
 .errorMessage {
-  color: var(--primary);
+  color: var(--redAlt);
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -342,14 +350,14 @@ form {
 }
 
 .fail {
-  background-color: #dc3545;
+  background-color: var(--redAlt);
 }
 
 .contact-info {
   padding: 25px;
   padding-left: 20px;
   border-radius: 6px;
-  background: var(--secondary-light);
+  background: var(--dark-lighten);
 }
 
 .contact-info span {
@@ -357,13 +365,13 @@ form {
   position: relative;
   font-size: 16px;
   top: -10px;
-  color: #212121;
+  color: #fff;
   left: 10px;
 }
 
 .contact-info p {
   margin-bottom: 0;
-  color: #212121;
+  color: #fff;
   margin-left: 50px;
 }
 

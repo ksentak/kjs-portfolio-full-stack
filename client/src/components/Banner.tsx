@@ -6,7 +6,7 @@ const Banner: React.FC = () => {
     fpsLimit: 60,
     particles: {
       number: {
-        value: 160,
+        value: 100,
         density: {
           enable: false
         }
