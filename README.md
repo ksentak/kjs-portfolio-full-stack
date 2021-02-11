@@ -12,6 +12,10 @@ https://keatonsentak.dev/
 
 ---
 
+![Home Page](./client/src/assets/images/app-screenshot.png)
+
+---
+
 ##### Author
 
 Keaton Sentak - [Portfolio](https://keatonsentak.dev) | [GitHub](https://github.com/ksentak)
